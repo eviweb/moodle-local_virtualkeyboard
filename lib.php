@@ -33,14 +33,16 @@
 function local_virtualkeyboard_resources_hook() {
     global $PAGE;
 
-    $PAGE->requires->js_init_code(
-        file_get_contents(__DIR__.'/resources/js/loader.js')
-    );
+    if ($PAGE->pagetype === 'mod-quiz-attempt') {
+        $PAGE->requires->js_init_code(
+            file_get_contents(__DIR__.'/resources/js/loader.js')
+        );
 
-    $PAGE->requires->js_init_code(
-        file_get_contents(__DIR__.'/resources/js/quiz.js'),
-        true
-    );
+        $PAGE->requires->js_init_code(
+            file_get_contents(__DIR__.'/resources/js/quiz.js'),
+            true
+        );
+    }
 }
 
 local_virtualkeyboard_resources_hook();
