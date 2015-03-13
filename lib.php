@@ -30,6 +30,8 @@
  * @license     http://opensource.org/licenses/MIT MIT License
  */
 
+defined('MOODLE_INTERNAL') || die;
+
 function local_virtualkeyboard_resources_hook() {
     global $PAGE;
 
