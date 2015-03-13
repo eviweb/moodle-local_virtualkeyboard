@@ -35,5 +35,13 @@ defined('MOODLE_INTERNAL') || die;
 if ($hassiteconfig) {
     $settings = new admin_settingpage('local_virtualkeyboard', get_string('pluginname', 'local_virtualkeyboard'));
 
+    $enable = new admin_setting_configcheckbox(
+        'local_virtualkeyboard/enable',
+        get_string('setting_enable', 'local_virtualkeyboard'),
+        get_string('setting_description_enable', 'local_virtualkeyboard'),
+        true
+    );
+    $settings->add($enable);
+
     $ADMIN->add('localplugins', $settings);
 }

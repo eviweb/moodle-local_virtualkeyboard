@@ -35,7 +35,7 @@ defined('MOODLE_INTERNAL') || die;
 function local_virtualkeyboard_resources_hook() {
     global $PAGE;
 
-    if ($PAGE->pagetype === 'mod-quiz-attempt') {
+    if (get_config('local_virtualkeyboard', 'enable') && $PAGE->pagetype === 'mod-quiz-attempt') {
         $PAGE->requires->js_init_code(
             file_get_contents(__DIR__.'/resources/js/loader.js')
         );

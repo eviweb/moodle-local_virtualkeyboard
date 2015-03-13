@@ -31,3 +31,6 @@
  */
 
 $string['pluginname'] = 'Virtual Keyboard';
+
+$string['setting_enable'] = 'Enable Virtual Keyboard';
+$string['setting_description_enable'] = 'Virtual Keyboard is enabled when checked';
