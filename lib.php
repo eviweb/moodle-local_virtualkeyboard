@@ -35,13 +35,19 @@ defined('MOODLE_INTERNAL') || die;
 function local_virtualkeyboard_resources_hook() {
     global $PAGE;
 
-    if (get_config('local_virtualkeyboard', 'enable') && $PAGE->pagetype === 'mod-quiz-attempt') {
+    if (get_config('local_virtualkeyboard', 'enable')
+        && $PAGE->pagetype === 'mod-quiz-attempt') {
+
         $PAGE->requires->js_init_code(
             file_get_contents(__DIR__.'/resources/js/loader.js')
         );
-
         $PAGE->requires->js_init_code(
-            file_get_contents(__DIR__.'/resources/js/quiz.js'),
+            file_get_contents(__DIR__.'/resources/js/quiz.js')
+        );
+
+        $PAGE->requires->js_init_call(
+            'enableVirtualKeyboardForQuiz',
+            array(get_config('local_virtualkeyboard', 'layout')),
             true
         );
     }
