@@ -45,8 +45,8 @@ class KeyboardLayoutExtractorTest extends \PHPUnit_Framework_TestCase
     public function testGetLayout()
     {
         $expected = array(
-            array('name' => 'Arabic', 'lang' => 'ar'),
-            array('name' => 'Assamese', 'lang' => 'as'),
+            'ar' => 'Arabic',
+            'as' => 'Assamese'
         );
 
         $this->assertEquals(

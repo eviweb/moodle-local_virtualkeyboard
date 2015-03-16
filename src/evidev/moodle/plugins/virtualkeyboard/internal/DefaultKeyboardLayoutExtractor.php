@@ -96,10 +96,7 @@ final class DefaultKeyboardLayoutExtractor implements KeyboardLayoutExtractor
                 $json = json_decode($this->fixString($layout));
 
                 if (isset($json->lang)) {
-                    $layouts[] = array(
-                        'name' => $json->name,
-                        'lang' => $json->lang[0]
-                    );
+                    $layouts[$json->lang[0]] = $json->name;
                 }
             }
         }
