@@ -32,7 +32,7 @@ Configuration menu is available under *Administration > Site administration > Pl
     
 What it does
 ------------
-In this early version, when enabled, this plugin automatically adds a keyboard icon *![(Virtual keyboard icon)](https://github.com/eviweb/moodle-local_virtualkeyboard/resources/img/keyboard.png)* next to all simple textfields that are not attached to a HTML editor.    
+In this early version, when enabled, this plugin automatically adds a keyboard icon *![(Virtual keyboard icon)](https://github.com/eviweb/moodle-local_virtualkeyboard/blob/master/resources/img/keyboard.png)* next to all simple textfields that are not attached to a HTML editor.    
 For now, only textfields of Short answer questions in a Quiz activity are concerned.    
      
 Known issues
