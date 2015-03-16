@@ -34,3 +34,5 @@ $string['pluginname'] = 'Virtual Keyboard';
 
 $string['setting_enable'] = 'Enable Virtual Keyboard';
 $string['setting_description_enable'] = 'Virtual Keyboard is enabled when checked';
+$string['setting_layout'] = 'Default Keyboard Layout';
+$string['setting_description_layout'] = 'Define the keyboard layout selected by default';
