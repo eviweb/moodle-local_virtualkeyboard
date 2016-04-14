@@ -1661,7 +1661,11 @@ var VKI_attach, VKI_close;
       if (self.VKI_isMoz || self.VKI_isWebKit) this.VKI_position(true);
       this.VKI_target.blur();
       this.VKI_target.focus();
-    } else this.VKI_close();
+    } else {
+        this.VKI_close();
+        this.VKI_target = false;
+        this.VKI_show(elem);
+    }
   };
 
 
