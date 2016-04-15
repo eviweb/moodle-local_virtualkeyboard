@@ -9,11 +9,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 #### Changed
 - enhance keyboard open/close behaviours
+- update readme
 
 #### Added
 - new config setting `contextlayout`
 - language provider interface + default implementation
 - main factory class
+- screen captures
 
 ### 0.1.0 - 2015-03-16
 #### Added
