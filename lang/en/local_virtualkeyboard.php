@@ -36,3 +36,5 @@ $string['setting_enable'] = 'Enable Virtual Keyboard';
 $string['setting_description_enable'] = 'Virtual Keyboard is enabled when checked';
 $string['setting_layout'] = 'Default Keyboard Layout';
 $string['setting_description_layout'] = 'Define the keyboard layout selected by default';
+$string['setting_contextlayout'] = 'Layout from context language';
+$string['setting_description_contextlayout'] = 'Try to automatically set the keyboard layout from the context language when checked';

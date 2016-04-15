@@ -58,5 +58,13 @@ if ($hassiteconfig) {
     );
     $settings->add($layout);
 
+    $contextlayout = new admin_setting_configcheckbox(
+        'local_virtualkeyboard/contextlayout',
+        get_string('setting_contextlayout', 'local_virtualkeyboard'),
+        get_string('setting_description_contextlayout', 'local_virtualkeyboard'),
+        false
+    );
+    $settings->add($contextlayout);
+
     $ADMIN->add('localplugins', $settings);
 }
