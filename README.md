@@ -52,3 +52,6 @@ Want to contribute
 ------------------
 Please feel free to fork this repository and ask for pull requests.
 
+License
+-------
+This project is licensed under the terms of the [GNU General Public License, version 3](/LICENSE)

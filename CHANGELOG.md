@@ -10,6 +10,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 #### Changed
 - enhance keyboard open/close behaviours
 - update readme
+- change license terms to GPL-3.0
 
 #### Added
 - new config setting `contextlayout`
