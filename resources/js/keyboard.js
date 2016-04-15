@@ -1662,9 +1662,12 @@ var VKI_attach, VKI_close;
       this.VKI_target.blur();
       this.VKI_target.focus();
     } else {
+        var reopen = this.VKI_target != elem;        
         this.VKI_close();
-        this.VKI_target = false;
-        this.VKI_show(elem);
+        if (reopen) {
+            this.VKI_target = false;
+            this.VKI_show(elem);
+        }
     }
   };
 
