@@ -32,6 +32,10 @@
 
 defined('MOODLE_INTERNAL') || die;
 
+require_once __DIR__.'/src/autoload.php';
+
+use evidev\moodle\plugins\virtualkeyboard\VirtualKeyboardMainFactory;
+
 function local_virtualkeyboard_resources_hook() {
     global $PAGE;
 
@@ -47,7 +51,7 @@ function local_virtualkeyboard_resources_hook() {
 
         $PAGE->requires->js_init_call(
             'enableVirtualKeyboardForQuiz',
-            array(get_config('local_virtualkeyboard', 'layout')),
+            array(VirtualKeyboardMainFactory::newLanguageProvider()->getLang()),
             true
         );
     }

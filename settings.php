@@ -1,5 +1,7 @@
 <?php
 
+use evidev\moodle\plugins\virtualkeyboard\VirtualKeyboardMainFactory;
+
 /* vim: set expandtab tabstop=4 shiftwidth=4 softtabstop=4: */
 /**
  * The MIT License
@@ -34,8 +36,6 @@ defined('MOODLE_INTERNAL') || die;
 
 require_once __DIR__.'/src/autoload.php';
 
-use evidev\moodle\plugins\virtualkeyboard\internal\DefaultKeyboardLayoutExtractor;
-
 if ($hassiteconfig) {
     $settings = new admin_settingpage('local_virtualkeyboard', get_string('pluginname', 'local_virtualkeyboard'));
 
@@ -52,7 +52,7 @@ if ($hassiteconfig) {
         get_string('setting_layout', 'local_virtualkeyboard'),
         get_string('setting_description_layout', 'local_virtualkeyboard'),
         'en',
-        DefaultKeyboardLayoutExtractor::create(
+        VirtualKeyboardMainFactory::newKeyboardLayoutExtractor(
             __DIR__.'/resources/js/keyboard.js'
         )->getLayout()
     );
