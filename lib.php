@@ -50,4 +50,9 @@ function local_virtualkeyboard_resources_hook() {
     }
 }
 
-local_virtualkeyboard_resources_hook();
+function local_virtualkeyboard_extend_navigation()
+{
+    local_virtualkeyboard_resources_hook();
+}
+
+local_virtualkeyboard_extend_navigation();

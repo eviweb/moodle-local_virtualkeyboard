@@ -4,6 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### [Unreleased][unreleased]
 
+#### Fixed
+- virtualkeyboard loaded only once after purging caches under Moodle 3.2+
+
 ### 0.1.1 - 2016-04-15
 #### Fixed
 - fix keyboard never shown in embedded questions (cloze)
