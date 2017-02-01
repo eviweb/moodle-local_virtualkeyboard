@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### [Unreleased][unreleased]
 
+### 0.1.2 - 2017-02-01
 #### Fixed
 - virtualkeyboard loaded only once after purging caches under Moodle 3.2+
 
