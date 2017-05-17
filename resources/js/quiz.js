@@ -8,7 +8,10 @@ function enableVirtualKeyboardForQuiz(Y, lang, wwwroot) {
     // force css display value for the keyboard table
     Y.all('input[id$=answer][id*=sub][type=text]').each(function(inputNode) {
         inputNode.next('img.keyboardInputInitiator').on('click', function(e) {
-            Y.one('table[id=keyboardInputMaster]').setStyle('display', '');
+            var virtualKeyboard = Y.one('table[id=keyboardInputMaster]');
+            if (virtualKeyboard) {
+                virtualKeyboard.setStyle('display', '');
+            }
         });
     });
 

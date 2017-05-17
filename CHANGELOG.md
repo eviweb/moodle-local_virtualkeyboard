@@ -6,6 +6,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 #### Fixed
 - keyboard resource files were not loaded when Moodle `wwwroot` contained subfolders (ie. http://domain.tld/moodle)
+- fix `TypeError: Y.one(...) is null` error when closing the virtual keyboard by clicking on the keyboard icon
 
 ### 0.1.2 - 2017-02-01
 #### Fixed
