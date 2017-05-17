@@ -4,6 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### [Unreleased][unreleased]
 
+#### Fixed
+- keyboard resource files were not loaded when Moodle `wwwroot` contained subfolders (ie. http://domain.tld/moodle)
+
 ### 0.1.2 - 2017-02-01
 #### Fixed
 - virtualkeyboard loaded only once after purging caches under Moodle 3.2+

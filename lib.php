@@ -30,7 +30,7 @@ require_once __DIR__.'/src/autoload.php';
 use evidev\moodle\plugins\virtualkeyboard\VirtualKeyboardMainFactory;
 
 function local_virtualkeyboard_resources_hook() {
-    global $PAGE;
+    global $PAGE, $CFG;
 
     if (get_config('local_virtualkeyboard', 'enable')
         && $PAGE->pagetype === 'mod-quiz-attempt') {
@@ -43,8 +43,16 @@ function local_virtualkeyboard_resources_hook() {
         );
 
         $PAGE->requires->js_init_call(
+            'loadVirtualKeyboardScript',
+            array($CFG->wwwroot)
+        );
+
+        $PAGE->requires->js_init_call(
             'enableVirtualKeyboardForQuiz',
-            array(VirtualKeyboardMainFactory::newLanguageProvider()->getLang()),
+            array(
+                VirtualKeyboardMainFactory::newLanguageProvider()->getLang(),
+                $CFG->wwwroot
+            ),
             true
         );
     }
