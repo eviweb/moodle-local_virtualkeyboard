@@ -65,7 +65,7 @@ var VKI_attach, VKI_close;
   this.VKI_altgr = this.VKI_altgrlock = false;
   this.VKI_dead = false;
   this.VKI_deadBox = true; // Show the dead keys checkbox
-  this.VKI_deadkeysOn = false;  // Turn dead keys on by default
+  this.VKI_deadkeysOn = true;  // Turn dead keys on by default
   this.VKI_numberPad = true;  // Allow user to open and close the number pad
   this.VKI_numberPadOn = false;  // Show number pad by default
   this.VKI_kts = this.VKI_kt = "US International";  // Default keyboard layout
@@ -942,7 +942,7 @@ var VKI_attach, VKI_close;
       [[" ", " "], ["Alt", "Alt"]]
     ], 'lang': ["yi"] };
 
-  this.VKI_layout['\u05d9\u05d9\u05b4\u05d3\u05d9\u05e9 \u05dc\u05e2\u05d1\u05d8'] = { // from http://jidysz.net/ 
+  this.VKI_layout['\u05d9\u05d9\u05b4\u05d3\u05d9\u05e9 \u05dc\u05e2\u05d1\u05d8'] = { // from http://jidysz.net/
     'name': "Yiddish (Yidish Lebt)", 'keys': [
       [[";", "~"], ["1", "!", "\u05B2", "\u05B2"], ["2", "@", "\u05B3", "\u05B3"], ["3", "#", "\u05B1", "\u05B1"], ["4", "$", "\u05B4", "\u05B4"], ["5", "%", "\u05B5", "\u05B5"], ["6", "^", "\u05B7", "\u05B7"], ["7", "&", "\u05B8", "\u05B8"], ["8", "*", "\u05BB", "\u05BB"], ["9", ")", "\u05B6", "\u05B6"], ["0", "(", "\u05B0", "\u05B0"], ["-", "_", "\u05BF", "\u05BF"], ["=", "+", "\u05B9", "\u05B9"], ["Bksp", "Bksp"]],
       [["Tab", "Tab"], ["/", "", "\u05F4", "\u05F4"], ["'", "", "\u05F3", "\u05F3"], ["\u05E7", "", "\u20AC"], ["\u05E8"], ["\u05D0", "", "\u05D0\u05B7", "\uFB2E"], ["\u05D8", "", "\u05D0\u05B8", "\uFB2F"], ["\u05D5", "\u05D5\u05B9", "\u05D5\u05BC", "\uFB35"], ["\u05DF", "", "\u05D5\u05D5", "\u05F0"], ["\u05DD", "", "\u05BC"], ["\u05E4", "", "\u05E4\u05BC", "\uFB44"], ["]", "}", "\u201E", "\u201D"], ["[", "{", "\u201A", "\u2019"], ["\\", "|", "\u05BE", "\u05BE"]],
@@ -1662,7 +1662,7 @@ var VKI_attach, VKI_close;
       this.VKI_target.blur();
       this.VKI_target.focus();
     } else {
-        var reopen = this.VKI_target != elem;        
+        var reopen = this.VKI_target != elem;
         this.VKI_close();
         if (reopen) {
             this.VKI_target = false;

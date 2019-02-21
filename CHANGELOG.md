@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### [Unreleased][unreleased]
 
+### 0.1.4 - 2019-02-21
+#### Changed
+- enable the keyboard dead keys by default
+
 ### 0.1.3 - 2017-05-17
 #### Fixed
 - keyboard resource files were not loaded when Moodle `wwwroot` contained subfolders (ie. http://domain.tld/moodle)

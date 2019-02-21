@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->version = 2017051700;
+$plugin->version = 2019022101;
 $plugin->requires = 2014111000;
 $plugin->component = 'local_virtualkeyboard';
 $plugin->maturity = MATURITY_STABLE;
-$plugin->release = '0.1.3 (Build: '.$plugin->version.')';
+$plugin->release = '0.1.4 (Build: '.$plugin->version.')';
 $plugin->dependencies = array();
